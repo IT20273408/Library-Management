@@ -54,6 +54,15 @@
                 let text = document.getElementById('text');
                 let btn = document.getElementById('btn');
                 let Girl = document.getElementById('Girl');
+
+                window.addEventListener('scroll', function() {
+                    let value = window.scrolly;
+                    stars.style.left = value * 0.25 + 'px';
+                    Books.style.top = value * 1.05 + 'px';
+                    Library.style.top = value * 0.05 + 'px';
+                    Girl.style.top = value * 0 + 'px';
+                    text.style.marginRight = value * 4 + 'px';
+                })
             </script>
 
 </body>
